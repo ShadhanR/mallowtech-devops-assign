@@ -11,7 +11,7 @@ RUN bundle install --jobs 20 --retry 5
 ADD . .
 RUN bundle exec rails assets:precompile
 
-ADD docker/app/entrypoint.sh /usr/bin/
+ADD entrypoint.sh /usr/bin/
 
 RUN chmod +x /usr/bin/entrypoint.sh
 ENTRYPOINT ["entrypoint.sh"]
