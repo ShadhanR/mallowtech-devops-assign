@@ -195,12 +195,3 @@ class MallowtechStack(Stack):
 
         cluster.add_asg_capacity_provider(capacity_provider)
 
-        # task_definition=aws_ecs.TaskDefinition(
-        #     self,"mallowtech-ror-task-definition",
-        #     family="mallowtech-ror",
-        #     network_mode=aws_ecs.NetworkMode.BRIDGE,
-        #     compatibility=aws_ecs.Compatibility.EC2,
-        #     memory_mib="512",
-        #     task_role=task_role,
-        #     execution_role=execution_role,
-        #     )
